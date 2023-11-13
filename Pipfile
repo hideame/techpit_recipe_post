@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 django = "*"
+black = "23.11.0"
+isort = "5.12.0"
+django-crispy-forms = "1.9"
 
 [dev-packages]
 
