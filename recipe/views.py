@@ -2,6 +2,8 @@ from django.contrib import messages
 from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
 
+from comment.forms import CommentForm
+
 from .models import Recipe
 
 
@@ -40,6 +42,11 @@ class RecipeCreateView(CreateView):
 class RecipeDetailView(DetailView):
     model = Recipe
     template_name = "recipe/recipe_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["CommentForm"] = CommentForm(initial={"recipe": self.object})
+        return context
 
 
 class RecipeUpdateView(UpdateView):
