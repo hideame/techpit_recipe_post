@@ -1,0 +1,67 @@
+[
+    {
+        "model": "recipe.recipe",
+        "pk": 1,
+        "fields": {
+            "title": "タイトル１",
+            "content": "作り方１",
+            "description": "説明の更新１",
+            "image": "",
+            "user": null,
+            "created": "2023-11-12T04:36:09.760Z",
+            "modified": "2023-11-15T00:00:27.056Z"
+        }
+    },
+    {
+        "model": "recipe.recipe",
+        "pk": 2,
+        "fields": {
+            "title": "タイトル２",
+            "content": "内容２",
+            "description": "",
+            "image": "",
+            "user": 1,
+            "created": "2023-11-12T04:36:16.535Z",
+            "modified": "2023-11-20T00:10:32.186Z"
+        }
+    },
+    {
+        "model": "recipe.recipe",
+        "pk": 4,
+        "fields": {
+            "title": "レシピ",
+            "content": "テスト",
+            "description": "更新メッセージ表示テスト3",
+            "image": "",
+            "user": null,
+            "created": "2023-11-13T08:42:00.303Z",
+            "modified": "2023-11-15T00:54:34.231Z"
+        }
+    },
+    {
+        "model": "recipe.recipe",
+        "pk": 6,
+        "fields": {
+            "title": "レシピ",
+            "content": "作り方６",
+            "description": "保存後のトップページへの遷移テスト",
+            "image": "images/uploaded/favicon_flag_XZEw6aE.ico",
+            "user": 1,
+            "created": "2023-11-13T23:58:33.257Z",
+            "modified": "2023-11-20T00:10:39.142Z"
+        }
+    },
+    {
+        "model": "recipe.recipe",
+        "pk": 8,
+        "fields": {
+            "title": "画像テスト",
+            "content": "画像テスト",
+            "description": "象の画像",
+            "image": "images/uploaded/Elephant.jpg",
+            "user": 1,
+            "created": "2023-11-15T01:40:34.838Z",
+            "modified": "2023-11-20T00:10:43.414Z"
+        }
+    }
+]
